@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("zldaLS.webp")  no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100vw 100vh;
+}
+
+#board{
+    background: linear-gradient(rgb(188, 220, 188),rgb(190, 190, 107));
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr); 
+}
+
+#scorebox {
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+}
+
+.food {
+    background-color: green;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.head {
+    background-color: red;
+    border: 2px solid black;
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid black;
+    border-radius: 12px;
+}
